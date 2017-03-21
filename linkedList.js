@@ -48,9 +48,7 @@ function linkedListGenerator(){
       var backNode = this.get(number - 1);
       var firstNode = this.get(number + 1);
       var targetNode = this.get(number);
-      // console.log(backNode);
-      // console.log(firstNode);
-      console.log(targetNode);
+
       if(targetNode === false) {
         return false;
       }
@@ -74,7 +72,6 @@ function linkedListGenerator(){
       };
       var backNode = this.get(number - 1);
       var firstNode = this.get(number + 1);
-      var targetNode = this.get(number);
       if(number === 0 ) {
         insertedNode.next = head;
         head = insertedNode;
