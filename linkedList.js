@@ -5,29 +5,42 @@
  */
 function linkedListGenerator(){
 
+  var head = null;
+  var tail = null;
+
   return {
 
     getHead: function() {
-
+      return head;
     },
 
     getTail: function() {
+      return tail;
+    },
+
+    add: function(value) {
+      var newNode = {
+        value: value,
+        next: null
+      };
+      head = newNode;
+      tail = newNode;
+      return newNode;
+
+      if(head.next === null) {
+        return tail;
+      }
+    },
+
+    remove: function(number) {
 
     },
 
-    add: function() {
+    get: function(number) {
 
     },
 
-    remove: function() {
-
-    },
-
-    get: function() {
-
-    },
-
-    insert: function() {
+    insert: function(value,number) {
 
     }
   };
